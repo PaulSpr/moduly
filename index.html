@@ -1,0 +1,116 @@
+<!doctype html>  
+
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	
+	<title>Moduly - A jQuery plugin to create responsive HTML modules</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+
+
+<body>
+	
+	
+	<main>
+	
+		<article>
+			<h1>Moduly main article</h1>
+			<p>Moduly is awesome and we would like you to contact us. That's what the form in this article is for. Just fill in your name, emailaddress (we swear we won't spam you, really, this form is just here for convenience) and a message, though we don't care what you have to say.</p>
+			<p>Actually, just fill in your name and emailaddress and you'll be fine.</p>
+			
+			<form class="contact-form">
+				<h2>Contact us</h2>
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input id="name" type="text" />
+					</li>
+					<li>
+						<label for="email">Emailaddress</label>
+						<input id="email" type="email" />
+					</li>
+					<li class="message-box">
+						<label for="message">Message</label>
+						<textarea id="message"></textarea>
+					</li>
+					<li>
+						<button>Send your message</button>
+					</li>
+				</ul>
+			</form>
+			
+			
+		</article>
+		
+		<aside>
+			<h1>Moduly sidebar</h1>
+			
+			<p>You don't look at forms in an article? Don't worry, we have one in our sidebar as well.</p>
+			
+			<form class="contact-form">
+				<h2>Contact us</h2>
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input id="name" type="text" />
+					</li>
+					<li>
+						<label for="email">Emailaddress</label>
+						<input id="email" type="email" />
+					</li>
+					<li class="message-box">
+						<label for="message">Message</label>
+						<textarea id="message"></textarea>
+					</li>
+					<li>
+						<button>Send your message</button>
+					</li>
+				</ul>
+			</form>
+		</aside>
+	</main>
+	
+	<footer>
+		<h1>Moduly footer</h1>
+		
+		<p>Just to be sure, we want you to see this form one more time. You know, in case you missed it.
+		<form class="contact-form">
+				<h2>Contact us</h2>
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input id="name" type="text" />
+					</li>
+					<li>
+						<label for="email">Emailaddress</label>
+						<input id="email" type="email" />
+					</li>
+					<li class="message-box">
+						<label for="message">Message</label>
+						<textarea id="message"></textarea>
+					</li>
+					<li>
+						<button>Send your message</button>
+					</li>
+				</ul>
+			</form>
+		
+	</footer>
+	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="moduly.js"></script>
+
+	<script>
+		$(document).moduly();
+	</script>
+
+  
+</body>
+
+</html>
