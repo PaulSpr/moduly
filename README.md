@@ -52,7 +52,7 @@ You can also create more min-width Moduly selectors like this:
            This is in addition to the styles already applied with the min-width-500 selector */
     }
 
-The biggest difference with regular responsive web design is that you style an element based on it's own width, not the window width. So it doesn't matter in what container the element is shown. It will always look good.
+The biggest difference with regular responsive web design is that you style an element based on its own width, not the window width. So it doesn't matter in what container the element is shown. It will always look good.
 
 
 Demo
@@ -80,6 +80,6 @@ Caveats
 * Currently there is no Internet Explorer support below IE10.
 * There is only support for min-width. That's not a problem if you work mobile-first. Adding max-width is pretty trivial
 * You must write the moduly selectors in the order of small to large. Because of source order being an influence in how CSS is applied, this gives the most predictable results.
-* Moduly only checks your CSS once, on page load. It then binds itself to the elements found in the CSS. If you dynamically add elements to your page, Moduly will not handle them. You can re-fire Moduly manually with $(document).moduly(); if you want though, but there might be some unknown downsides to that.
+* Moduly only checks your CSS once, on page load. It then binds itself to the elements found in the CSS. If you dynamically add elements to your page, Moduly will not handle them. You can re-fire Moduly manually with $(document).moduly(); if you want, but there might be some unknown downsides to that.
 
 I'm going to fix bugs and add features of course and I'll use it in some of my projects for work so it'll get better over time. Check the Github repo for updates.
