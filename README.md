@@ -1,11 +1,11 @@
-Moduly: Making element queries possible
-=======================================
+Moduly: Easily make responsive page modules
+===========================================
 
 Moduly is a jQuery plugin that makes it possible to easily create responsive page modules. This means you declare the layout of an element of the page based on the size of the element, not the size of the page. This way you can drop that element into any size container on the page and have it look good.
 
 Think of it this way. With responsive web design you define the overall layout of the page when the page dimensions change. With responsive page modules you define the changes to the individual elements on the page. Moduly let's you create the latter now. Hopefully something similar will make it into the CSS spec one day, but for now, we'll have to do with things like this plugin.
 
-There's the start of a CSS spec floating around called [Element Queries](http://responsiveimagescg.github.io/eq-usecases/) which is what this is more or less doing with technology we have today.
+There's the start of a CSS spec floating around called [Element Queries](http://responsiveimagescg.github.io/eq-usecases/) which is what Moduly more or less tries to achieve with the technology we have today.
 
 One major thing to take into account at this moment: Moduly is a proof of concept for responsive modules on a page and CSS Element Queries. It has not yet been battle tested.
 

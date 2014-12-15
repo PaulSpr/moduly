@@ -38,6 +38,8 @@ textarea{
 /*
 These styles are what Moduly listens to.
 The magic words are .moduly-min-width-
+
+This would of course look a lot nicer with LESS or SASS nesting
 */
 .moduly-min-width-500.contact-form{
 	
