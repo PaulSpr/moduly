@@ -1,0 +1,90 @@
+body{
+	margin: 0;
+}
+
+h1{
+	font-size: 30px;
+}
+h2{
+	font-size: 20px;
+}
+article{
+	padding: 20px;
+}
+aside{
+	background: #eee;
+	padding: 20px;
+}
+footer{
+	background: #ddd;
+	padding: 20px;
+}
+textarea{
+	width: 98%;
+}
+
+.contact-form{
+
+}
+
+	.contact-form ul{
+		list-style: none;
+		padding: 0;
+	}
+	.contact-form input, .contact-form label{
+		display: block;
+	}
+	
+/*
+These styles are what Moduly listens to.
+The magic words are .moduly-min-width-
+*/
+.moduly-min-width-500.contact-form{
+	
+}
+	.moduly-min-width-500.contact-form li{
+		overflow: hidden;
+	}
+	
+	.moduly-min-width-500.contact-form label{
+		float: left;
+		width: 24%;
+	}
+	.moduly-min-width-500.contact-form input{
+		float: left;
+		width: 72%;
+		margin-left: 2%;
+	}
+
+.moduly-min-width-900.contact-form{
+	
+}
+
+
+	.moduly-min-width-900.contact-form li{
+		width: 48%;
+		margin-right: 2%;
+	}
+	.moduly-min-width-900.contact-form .message-box{
+		float: right;
+		margin-top: -55px;
+	}
+
+
+/* Media queries just for the general layout */
+
+@media screen and (min-width: 600px){
+	main{
+		overflow: hidden;
+	}
+	article{
+		float: left;
+		width: 60%;
+		padding: 20px 2%;
+	}
+	aside{
+		float: right;
+		width: 32%;
+		padding: 20px 2%;
+	}
+}
