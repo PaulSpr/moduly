@@ -124,3 +124,6 @@
     };
 
 })( jQuery );
+
+// call Moduly once
+$(document).ready(function(){ $(document).moduly(); })
