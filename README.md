@@ -1,11 +1,13 @@
-Moduly: Making easy responsive page modules possible
-====================================================
+Moduly: Making element queries possible
+=======================================
 
 Moduly is a jQuery plugin that makes it possible to easily create responsive page modules. This means you declare the layout of an element of the page based on the size of the element, not the size of the page. This way you can drop that element into any size container on the page and have it look good.
 
 Think of it this way. With responsive web design you define the overall layout of the page when the page dimensions change. With responsive page modules you define the changes to the individual elements on the page. Moduly let's you create the latter now. Hopefully something similar will make it into the CSS spec one day, but for now, we'll have to do with things like this plugin.
 
-One major thing to take into account at this moment: Moduly is a proof of concept for Responsive Page Modules. It has not yet been battle tested.
+There's the start of a CSS spec floating around called [Element Queries](http://responsiveimagescg.github.io/eq-usecases/) which is what this is more or less doing with technology we have today.
+
+One major thing to take into account at this moment: Moduly is a proof of concept for responsive modules on a page and CSS Element Queries. It has not yet been battle tested.
 
 
 What can I use it for?
@@ -70,8 +72,6 @@ After this is done (and on every window resize event) Moduly will walk through a
 
 So if you have a `.contact-form` element which width exceeds 500 pixels and you have defined `.moduly-min-width-500.contact-form` in your CSS. The `.moduly-min-width-500` class will be added to the `.contact-form` element.
 
-One benefit of how Moduly works, is that your base styling is always applied to your element, even if Moduly fails.
-
 
 Caveats
 -------
@@ -81,5 +81,7 @@ Caveats
 * There is only support for min-width. That's not a problem if you work mobile-first. Adding max-width is pretty trivial
 * You must write the moduly selectors in the order of small to large. Because of source order being an influence in how CSS is applied, this gives the most predictable results.
 * Moduly only checks your CSS once, on page load. It then binds itself to the elements found in the CSS. If you dynamically add elements to your page, Moduly will not handle them. You can re-fire Moduly manually with $(document).moduly(); if you want, but there might be some unknown downsides to that.
+
+One benefit of how Moduly works, is that your base styling is always applied to your element, even if Moduly fails.`
 
 I'm going to fix bugs and add features of course and I'll use it in some of my projects for work so it'll get better over time. Check the Github repo for updates.
